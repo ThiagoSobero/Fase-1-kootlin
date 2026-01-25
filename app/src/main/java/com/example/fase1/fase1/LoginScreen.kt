@@ -1,4 +1,4 @@
-package com.example.fase1.App
+package com.example.fase1.fase1
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -25,10 +25,8 @@ fun LoginScreen(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Button(onClick = {
-            navController.navigate(Routes.Home.route)
-        }) {
-            Text("Entrar")
+        Button(onClick = { navController.navigate("home") }) { // Revisa este texto
+            Text("Login")
         }
     }
 }

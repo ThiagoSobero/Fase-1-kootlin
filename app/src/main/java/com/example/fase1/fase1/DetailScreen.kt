@@ -1,4 +1,4 @@
-package com.example.fase1.App
+package com.example.fase1.fase1
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding

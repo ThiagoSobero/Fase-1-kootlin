@@ -1,4 +1,4 @@
-package com.example.fase1.App
+package com.example.fase1.fase1
 
 sealed class Routes(val route: String) {
     object Login : Routes("login")

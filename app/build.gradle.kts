@@ -1,9 +1,11 @@
 
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 
 
 }
@@ -60,7 +62,16 @@ dependencies {
     implementation(libs.androix.navigation)
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
-
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation.compose)
+    implementation(libs.firebase.crashlytics.buildtools)
+    // Ktor HTTP Client
+    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.core)
+    implementation(libs.kotlinx.serialization.json)
+    ksp(libs.hilt.compiler)
     ksp(libs.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
