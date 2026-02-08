@@ -20,7 +20,7 @@ firebaseCrashlyticsBuildtools = "3.0.6"
 ktor = "2.3.5"
 kotlinx-serialization = "1.6.0"
 runtime = "1.10.2"
-material3 = "1.4.0"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
