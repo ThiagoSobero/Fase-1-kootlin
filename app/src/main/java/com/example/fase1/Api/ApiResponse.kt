@@ -1,4 +1,4 @@
-package com.example.fase1.fase2.Api
+package com.example.fase1.Api
 
 data class ApiResponse(
     val results: List<ApiContact>

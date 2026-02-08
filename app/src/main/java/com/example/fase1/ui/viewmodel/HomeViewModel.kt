@@ -1,7 +1,8 @@
-package com.example.fase1.fase2
+package com.example.fase1.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.fase1.repository.ContactRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
@@ -16,7 +17,7 @@ class HomeViewModel @Inject constructor(
     val contacts = repository.contacts
         .stateIn(
             viewModelScope,
-            SharingStarted.WhileSubscribed(5_000),
+            SharingStarted.Companion.WhileSubscribed(5_000),
             emptyList()
         )
 
@@ -26,4 +27,3 @@ class HomeViewModel @Inject constructor(
         }
     }
 }
-

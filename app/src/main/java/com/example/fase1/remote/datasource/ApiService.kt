@@ -1,11 +1,12 @@
-package com.example.fase1.fase2.Api
+package com.example.fase1.remote.datasource
 
+import com.example.fase1.Api.ApiResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("api/iv9bqexh")
+    @GET("?inc=name,location,picture")
     suspend fun getContacts(
         @Query("key") apiKey: String,
         @Query("results") results: Int = 10

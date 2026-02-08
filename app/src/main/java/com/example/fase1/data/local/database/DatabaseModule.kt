@@ -1,7 +1,8 @@
-package com.example.fase1.fase2
+package com.example.fase1.data.local.database
 
 import android.content.Context
 import androidx.room.Room
+import com.example.fase1.data.local.dao.ContactDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

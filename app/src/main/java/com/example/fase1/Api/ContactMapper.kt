@@ -1,6 +1,6 @@
-package com.example.fase1.fase2.Api
+package com.example.fase1.Api
 
-import com.example.fase1.fase2.ContactEntity
+import com.example.fase1.data.entity.ContactEntity
 
 fun ApiContact.toEntity(): ContactEntity {
     return ContactEntity(

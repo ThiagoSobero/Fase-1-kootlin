@@ -1,4 +1,4 @@
-package com.example.fase1.fase2
+package com.example.fase1.data.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

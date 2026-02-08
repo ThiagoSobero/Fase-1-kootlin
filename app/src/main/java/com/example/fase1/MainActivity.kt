@@ -5,13 +5,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.fase1.fase1.HomeScreen
 import com.example.fase1.fase1.LoginScreen
-import com.example.fase1.ui.viewmodel.ContactViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,10 +24,7 @@ class MainActivity : ComponentActivity() {
                     LoginScreen(navController = navController)
                 }
                 composable("home") {
-                    HomeScreen(
-                        navController = TODO(),
-                        viewModel = TODO()
-                    )
+
                 }
             }
         }

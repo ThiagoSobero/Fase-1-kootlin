@@ -1,11 +1,10 @@
 package com.example.fase1.ui.model
 
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.SerialName
 
 
 @Serializable
-data class RandomApiResponse(
+data class RandomuserApiResponse(
     val results: List<RandomUser>
 )
 

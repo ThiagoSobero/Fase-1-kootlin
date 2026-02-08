@@ -7,7 +7,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.fase1.ui.model.RandomApiResponse
+import com.example.fase1.ui.model.RandomuserApiResponse
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.ktor.client.*
 import io.ktor.client.call.*
@@ -39,8 +39,8 @@ class ContactViewModel @Inject constructor() : ViewModel() {
                     }
                 }
 
-                // Llamada a tu API RandomAPI.com
-                val response: RandomApiResponse = client.get("https://randomapi.com/api/iv9bqexh?key=OUZ6-DXK4-U4BS-K10D").body()
+                // Llamada a tu API Randomuser.com
+                val response: RandomuserApiResponse = client.get("https://randomuser.me/api").body()
 
                 // Mapear nombres completos
                 val newContacts = response.results.map { "${it.name.first} ${it.name.last}" }

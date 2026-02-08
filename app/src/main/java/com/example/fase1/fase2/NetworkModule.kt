@@ -1,6 +1,6 @@
 package com.example.fase1.fase2
 
-import com.example.fase1.fase2.Api.ApiService
+import com.example.fase1.remote.datasource.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,7 +17,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(): Retrofit =
         Retrofit.Builder()
-            .baseUrl("https://randomapi.com/api/iv9bqexh?key=OUZ6-DXK4-U4BS-K10D")
+            .baseUrl("https://randomuser.me/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

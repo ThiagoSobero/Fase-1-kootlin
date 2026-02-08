@@ -1,7 +1,8 @@
-package com.example.fase1.fase2
+package com.example.fase1.repository
 
-import com.example.fase1.fase2.Api.ApiService
-import com.example.fase1.fase2.Api.toEntity
+import com.example.fase1.data.local.dao.ContactDao
+import com.example.fase1.Api.toEntity
+import com.example.fase1.remote.datasource.ApiService
 import javax.inject.Inject
 
 class ContactRepository @Inject constructor(
@@ -21,4 +22,3 @@ class ContactRepository @Inject constructor(
     }
 
 }
-
